@@ -1,12 +1,19 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    &-owner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .owner {
         display: flex;
         &-contact {
-            width: 80px;
+            width: 100px;
+        }
+        .owner__img  {
+            margin-right: 13px;
         }
     }
 }
