@@ -1,14 +1,24 @@
 import React from "react";
+import Features from "./components/Features";
+import Gradient from "./components/Gradient";
 import Header from "./components/Header";
 import Owner from "./components/Owner";
-import Scooters from "./components/Scooters";
+import PackingList from "./components/PackingList";
+import Rectangle from "./components/Rectangle";
+import Skooters from "./components/Skooters";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Owner />
-      <Scooters />
+      <Skooters />
+      <Rectangle />
+
+      <PackingList />
+
+      <Gradient />
+      <Features />
     </div>
   );
 }

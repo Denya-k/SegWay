@@ -1,0 +1,39 @@
+@import "mixin.scss";
+
+
+.features {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding-top: 65px;
+    &-features__title{
+       @include title;
+       margin-bottom: 65px;
+    }
+    &-features__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-features__item {
+        width: 25%;
+        margin-bottom: 25px;
+        .title {
+            font-weight: 300;
+            font-size: 35px;
+            // градиент для текста
+            background: linear-gradient(180deg, #009EFF 0%, #007BCD 100%);
+            color: transparent;    
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        &-img {
+            height: 100px;
+        }
+        .p {
+            color: #999999;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}

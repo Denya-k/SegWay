@@ -1,0 +1,12 @@
+.gradient {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.gr {
+    width: 100%;
+    height: 800px;
+    // background-image: linear-gradient(rgba(255,255,255,0.1) 70%, #FFFFFF 100%), url(../assets/img/gradient/gradient.png);
+    background-image: linear-gradient(rgba(255,255,255,0.1) 70%, #F5F5F5 100%);
+}

@@ -1,21 +1,21 @@
 import React from 'react'
-import img1 from "../assets/img/skoters/image1.png"
-import img2 from "../assets/img/skoters/image2.png"
-import img3 from "../assets/img/skoters/image3.png"
-import img4 from "../assets/img/skoters/image4.png"
-import img5 from "../assets/img/skoters/image5.png"
-import img6 from "../assets/img/skoters/image6.png"
-import img7 from "../assets/img/skoters/image7.png"
-import img8 from "../assets/img/skoters/image8.png"
-import img9 from "../assets/img/skoters/image9.png"
-import img12 from "../assets/img/skoters/image12.png"
-import img13 from "../assets/img/skoters/image13.png"
-import img15 from "../assets/img/skoters/image15.png"
-import img17 from "../assets/img/skoters/image17.png"
-import img18 from "../assets/img/skoters/image18.png"
+import img1 from "../assets/img/skooters/image1.png"
+import img2 from "../assets/img/skooters/image2.png"
+import img3 from "../assets/img/skooters/image3.png"
+import img4 from "../assets/img/skooters/image4.png"
+import img5 from "../assets/img/skooters/image5.png"
+import img6 from "../assets/img/skooters/image6.png"
+import img7 from "../assets/img/skooters/image7.png"
+import img8 from "../assets/img/skooters/image8.png"
+import img9 from "../assets/img/skooters/image9.png"
+import img12 from "../assets/img/skooters/image12.png"
+import img13 from "../assets/img/skooters/image13.png"
+import img15 from "../assets/img/skooters/image15.png"
+import img17 from "../assets/img/skooters/image17.png"
+import img18 from "../assets/img/skooters/image18.png"
 import "../sass/skooters.scss"
 
-export default function Scooters() {
+export default function Skooters() {
     const skooters = [
         {name: "KS E22", src: `${img1}`},
         {name: "KS ES1L", src: `${img2}`},

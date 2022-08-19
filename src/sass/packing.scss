@@ -1,0 +1,24 @@
+ .packing__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 65px;
+    &-title {
+        margin-bottom: 30px;
+        font-weight: 700px;
+        font-size: 50px;
+    }
+}
+
+.packing__img {
+    width: 455px;
+    height: 455px;
+    background-color: #009EFF;
+    padding: 10px;
+    border-radius: 70%;
+    position: relative;
+}
+.ellipse__img {
+    left: -15px;
+    position: absolute;
+}
