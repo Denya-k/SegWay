@@ -1,0 +1,18 @@
+@import "mixin.scss";
+
+.reviews {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #F5F5F5;
+    &-title {
+        @include title;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .reviews__list {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+    }
+}

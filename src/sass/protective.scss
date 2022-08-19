@@ -1,0 +1,24 @@
+@import "mixin.scss";
+
+.protective {
+    border: 5px solid #009EFF;
+    margin-bottom: 100px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-img {
+        display: block;
+        width: 40%;
+    }
+    &-content {
+        width: 55%;
+    }
+    &-title {
+        @include title;
+    }
+    &-text {
+        @include text;
+    }
+}

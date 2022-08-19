@@ -1,0 +1,40 @@
+@import "mixin.scss";
+
+.control {
+    &-content {
+        display: flex;
+        justify-content: space-between
+    }
+    &-title {
+        @include title;
+        text-align: center;
+        margin-top: 63px;
+        margin-bottom: 16px;
+    }
+    &-text {
+        @include text;
+        text-align: center;
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 22%;
+        margin-left: 300px;
+    } 
+     &-item {
+        width: 30%;
+        text-align: center;
+    }
+    &-item-img {
+
+    }
+    &-item-text {
+        
+    }
+}

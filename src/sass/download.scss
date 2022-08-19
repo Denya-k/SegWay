@@ -1,0 +1,66 @@
+@import "mixin.scss";
+
+.section-download {
+    width: 100%;
+    background-color:#F5F5F5;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.download {
+    border: 5px solid #009EFF;
+    height: 320px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    &-download__title {
+        @include title;
+        display: block;
+        width: 50%;
+        text-align: left;
+        margin-top: 38px;
+        margin-bottom: 17px;
+    }
+    &-download__image{
+        position: absolute;
+        top: -85px;
+        left: -210px;
+    }
+    &-download__content {
+        // text-align: center;
+        // width: 700px;
+    }
+    &-download__list {
+        display: flex;
+        justify-content: end;
+        width: 60%;
+
+    }
+    &-download__item-img {
+        height: 45px;
+        margin-right: 5px;
+    }
+    &-download__item {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        font-size: 16px;
+    }
+    &-button {
+        padding: 10px 20px;
+        background-color: #009EFF;
+        color: white;
+        outline: none;
+        border: none;
+        margin-top: 30px;
+        width: 260px;
+        text-align: left;
+        &:hover {
+            cursor: pointer;
+            background-color: #0286d8;
+        }
+    }
+
+}
