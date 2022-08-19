@@ -1,0 +1,12 @@
+@import "mixin.scss";
+
+
+
+.kickskooter {
+    text-align: center;
+    &-kickskooter__title {
+        @include title;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+}

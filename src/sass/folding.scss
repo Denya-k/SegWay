@@ -1,0 +1,15 @@
+@import "mixin.scss";
+
+
+.folding {
+    text-align: center;
+    &-folding__title {
+        @include title;
+        margin-bottom: 18px;
+        margin-top: 75px;
+    }
+    &-folding__text {
+        @include text;
+        margin-bottom: 30px;
+    }
+}

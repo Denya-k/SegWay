@@ -5,3 +5,9 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@mixin text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #323941;
+}

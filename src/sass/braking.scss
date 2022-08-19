@@ -1,0 +1,18 @@
+@import "mixin.scss";
+
+.braking {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    &-system__content {
+        width: 55%;
+    }
+    &-system__title {
+        @include title;
+        margin-top: 150px;
+    }
+    &-system__text {
+        @include text;
+    } 
+    
+}
