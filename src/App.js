@@ -6,10 +6,12 @@ import DualBrakingSystem from "./components/DualBrakingSystem";
 import FastCharging from "./components/FastCharging";
 import Features from "./components/Features";
 import Folding from "./components/Folding";
+import Footer from "./components/Footer";
 import Gradient from "./components/Gradient";
 import Header from "./components/Header";
 import KickScooter from "./components/KickSkooter";
 import LedLight from "./components/LedLight";
+import Ninebot from "./components/Ninebot";
 import Owner from "./components/Owner";
 import PackingList from "./components/PackingList";
 import Protective from "./components/Protective";
@@ -26,7 +28,7 @@ function App() {
       <Owner />
       <Skooters />
       <Rectangle />
-
+      <Ninebot />
       <PackingList />
 
       <Gradient />
@@ -43,6 +45,8 @@ function App() {
       <Protective />
       <Reviews />
       <Control />
+      <Ninebot />
+      <Footer />
     </div>
   );
 }

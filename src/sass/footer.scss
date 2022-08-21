@@ -1,0 +1,20 @@
+footer {
+    height: 90px;
+    background-color: #32393F;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    &-contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-text {
+        width: 55%;
+    }
+}
