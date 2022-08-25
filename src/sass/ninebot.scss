@@ -8,6 +8,7 @@
     &-title {
         @include title;
         font-size: 108px;
+        width: 50%;
         text-transform: uppercase;
     }
     &-card {

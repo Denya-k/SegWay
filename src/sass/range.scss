@@ -1,0 +1,45 @@
+@import "../sass//mixin.scss";
+    
+    .range-icons__list {
+        display: flex;
+        align-items: center;
+        .range-icons__item{
+            width: 30%;
+            padding: 12px 22px;
+            display: flex;
+            &:hover {
+                cursor: pointer;
+                background-color: #009EFF;
+                color: #fff;
+            }
+        }
+        img {
+            margin-right: 15px;
+        }
+        span {
+            width: 40%;
+            display: inline-block;
+        }
+        margin-bottom: 20px;
+    }
+    
+    .range-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 22px;
+        box-sizing: border-box;
+        background-color: rgba(153, 153, 153, 0.08);
+       
+        .range-title {
+            @include title;
+            font-size: 25px;
+            width: 35%;
+        }
+        p {
+            @include text;
+            width: 70%;
+        }
+    }
+    
+

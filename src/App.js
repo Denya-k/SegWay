@@ -19,18 +19,29 @@ import Rectangle from "./components/Rectangle";
 import Regenerative from "./components/Regenerative";
 import Reviews from "./components/Reviews";
 import RidingModes from "./components/RidingModes";
-import Skooters from "./components/Skooters";
+import Scooters from "./components/Scooters";
+import scooterImg from "./assets/img/ninebot.svg"
+import scooterCard from "./assets/img/ninebot_card.svg"
+import scooterFirst from "./assets/img/scooter_ninebot.svg"
+import Range from "./components/Range";
+import Accessories from "./components/Accessories";
+import Compare from "./components/Compare";
+import OtherModels from "./components/OtherModels";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Owner />
-      <Skooters />
+      <Scooters />
       <Rectangle />
-      <Ninebot />
+      <Ninebot 
+        img1={scooterFirst} 
+        right={"158px"}
+      />
+      <Range />
       <PackingList />
-
+      <Accessories />
       <Gradient />
       <Features />
       <KickScooter />
@@ -42,10 +53,15 @@ function App() {
       <FastCharging />
       <RidingModes />
       <Download />
+      <Compare />
       <Protective />
       <Reviews />
       <Control />
-      <Ninebot />
+      <Ninebot 
+        img1={scooterImg} 
+        img2={scooterCard}
+      />
+      <OtherModels />
       <Footer />
     </div>
   );

@@ -1,0 +1,74 @@
+@import "mixin.scss";
+
+.accessories {
+    &-title {
+        @include title;
+        font-size: 50px;
+        text-align: center;
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-cards__item {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        min-height: 350px;
+    }
+    &-cards__ellipse {
+        width: 133px;
+        height: 133px;
+        background-color:  #EEEEEE;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        right: 110px;
+        top: -10px;
+
+    }
+    &-cards__img {
+        height: 133px;
+        // max-width: 200px;
+        img {
+            max-height: 100px;
+
+        }
+    }
+    &-cards__title {
+        @include title;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 295px;
+    }
+    &-cards__text {
+        @include text;
+        font-size: 15px;
+        color: #999999;
+    }
+
+    &-cards__price{
+        display: block;
+        color: #323941;
+        font-size: 18px;
+    }
+    &-cards__button {
+        color: #C6C6C6 ;
+        padding: 15px 25px ;
+        background-color: white;
+        border: 1px solid #C6C6C6;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        &:hover {
+            background-color: #009EFF;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
