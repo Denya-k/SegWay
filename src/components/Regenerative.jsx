@@ -1,17 +1,17 @@
 import React from 'react'
-import "../sass/battery.scss"
+import "../sass/regenerative.scss"
 import regenerative from "../assets/img/regenerative.svg"
 
 export default function Regenerative() {
   return (
-    <div className="battery">
+    <div className="regenerative">
         
         <div className="wrapper ">
-            <div className="battery-content">
-                <h1 className="battery-battery__title">
+            <div className="regenerative-content">
+                <h1 className="regenerative-regenerative__title">
                     REGENERATIVE BRAKE FOR POWER RECYCLE
                 </h1>
-                <p className="battery-battery__text">
+                <p className="regenerative-regenerative__text">
                     The innovative regenerative brake system turns Ninebot
                     KickScooter MAX into an electric vehicle powered by electricity
                     and recycled energy from riding. Energy will be collected from

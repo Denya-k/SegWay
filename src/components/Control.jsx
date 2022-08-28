@@ -50,6 +50,7 @@ export default function Control() {
                     )}
                     <div className="dowload-app">
                         <img 
+
                             src={require("../assets/img/AppStore.svg").default} 
                             alt="App Store" 
                         />
@@ -59,7 +60,9 @@ export default function Control() {
                         />
                     </div>
             </div>
+            
             <img 
+                className="iphone_img"
                 src={control1} 
                 alt="Iphone" 
             />

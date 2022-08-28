@@ -12,6 +12,7 @@ export default function OtherModels() {
         <div className="other other__list">
             {otherModelsArr.map((item) => 
             <ul className="other__item" key={item.id}>
+                <div className="ellipse"></div>
                 <li>
                     <img src={item.img} alt="Scooter" />
                 </li>

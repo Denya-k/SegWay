@@ -3,9 +3,9 @@
 .braking {
     height: 550px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     &-system__content {
-        width: 55%;
+        width: 45%;
     }
     &-system__title {
         @include title;
@@ -13,6 +13,14 @@
     }
     &-system__text {
         @include text;
+        width: 80%;
     } 
     
+}
+.braking-section {
+    position: relative;
+    img {
+        position: absolute;
+        left: 0;
+    }
 }

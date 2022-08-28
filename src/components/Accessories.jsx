@@ -40,7 +40,9 @@ export default function Accessories() {
             
             )}
         </div>
-        
+        <div className="more">
+            <button className="button button-more">SEE MORE</button>
+        </div>
     </div>
   )
 }

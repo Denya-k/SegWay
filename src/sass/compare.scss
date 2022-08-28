@@ -61,11 +61,12 @@
     }
     .button {
         background-color: #009EFF;
+        border: none;
         color: white;
-        padding: 15px 30px;
+        padding: 12px 20px;
         text-align: center;
-        max-width: 100px ;
-        min-width: 100px;
+        max-width: 170px ;
+        min-width: 170px;
         &:hover {
             cursor: pointer;
             background-color: #009dffad;
@@ -87,10 +88,6 @@
         font-size: 70px;
         color: #009EFF;
     }
-    &__next {
-
-    }
-
     // style icon 
     .compare__icon__list {
         position: absolute;
@@ -128,28 +125,6 @@
             transition-timing-function: ease-in-out;
         }
     }
-    // .item {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
-
-    // .item1{
-    //     // width: 450px;
-    //     // height: 300px;
-    //     background-color: #009EFF;
-    // }
-
-    // .item2{
-    //     // width: 450px;
-    //     // height: 300px;
-    //     background-color: #323941;
-    // }
-    // .item3{
-    //     // width: 450px;
-    //     // height: 300px;
-    //     background-color: #ECECEC;
-    // }
     .arrow {
         border: 2px solid #009EFF;
         font-size: 70px;

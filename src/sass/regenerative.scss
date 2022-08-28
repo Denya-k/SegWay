@@ -1,0 +1,27 @@
+@import "mixin.scss";
+
+.regenerative {
+    background-color: #0E0E16;
+    z-index: -1;
+    position: relative;
+    height: 550px;
+    display: flex;
+    justify-content: end;
+    &-regenerative__title {
+        @include title;
+        margin-top: 60px;
+        width: 65%;
+        color: white;
+    }
+    &-regenerative__text {
+        @include text;
+        width: 55%;
+        color: white;
+    }
+    img {
+        position: absolute;
+        z-index: -1;
+    } 
+
+    
+}
