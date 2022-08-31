@@ -1,0 +1,39 @@
+@import "breakpoints";
+
+// header 
+@include sm-d {
+    .header {
+        background-color: #fff;
+        .header-list {
+            display: none;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-burger {
+            display: block;
+        }
+        .header-logo {
+            display: block;
+            max-width: 90px;
+        }
+           
+        .contact {
+            .contact-number {
+                display: none;
+            }
+            .contact-icon {
+                margin: 7px;
+                color: #323941;
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+        
+    }
+   
+   
+}

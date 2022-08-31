@@ -1,0 +1,72 @@
+@import "./vars";
+// Desktop first
+
+@mixin sm-u {
+    @media (min-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin md-u {
+    @media (min-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin lg-u {
+    @media (min-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+// Only 
+
+@mixin sm {
+    @media (max-width: (map-get($breakpoints,  md) - .2px) ) and (min-width: map-get($breakpoints, sm) ) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: (map-get($breakpoints,  lg) - .2px) ) and (min-width: map-get($breakpoints, md) ) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: (map-get($breakpoints,  xl) - .2px) ) and (min-width: map-get($breakpoints, lg) ) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media  (min-width: map-get($breakpoints, xl) ) {
+        @content;
+    }
+}
+
+// Mobile firts
+
+@mixin xl-d {
+    @media (max-width: (map-get($breakpoints, xl) - .2px)) {
+        @content;
+    }
+}
+
+@mixin lg-d {
+    @media (max-width: (map-get($breakpoints, lg) - .2px)) {
+        @content;
+    }
+}
+
+@mixin md-d {
+    @media (max-width: (map-get($breakpoints, md) - .2px)) {
+        @content;
+    }
+}
+
+@mixin sm-d {
+    @media (max-width: (map-get($breakpoints, sm) - .2px)) {
+        @content;
+    }
+}

@@ -10,7 +10,9 @@ export default function PackingList() {
           <div className="">
               <h1 className="packing__list-title">PACKING LIST</h1>
               {/* <iframe src="" frameborder="0"> */}
+              <div className="iframe">
                   <img src={video} alt="video" />
+              </div>
               {/* </iframe> */}
           </div>
           <div className="packing__img">

@@ -1,11 +1,15 @@
+@import "./@media/mheader.scss";
+
 .wrapper {
-    width: 1200px;
     margin: 0 auto;
     &-owner {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
+        @include sm-d {
+            display:none;
+        }
     }
     .owner {
         display: flex;
@@ -16,4 +20,5 @@
             margin-right: 13px;
         }
     }
+  
 }

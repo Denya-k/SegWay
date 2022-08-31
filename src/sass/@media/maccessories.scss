@@ -1,0 +1,37 @@
+@import "breakpoints";
+
+
+@include sm-d {
+    .accessories-title {
+        font-size: 28px;
+    }
+    .accessories-cards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        // overflow-y: hidden;
+    }
+    .accessories-cards__item {
+        width: 30%;
+        max-width: 210px;
+        margin-right: 20px;
+    }
+    .accessories-cards__title {
+        font-size: 18px;
+        max-width: 130px;
+    }
+    .accessories-cards__text {
+        font-size: 12px;
+    }
+    .accessories-cards__price {
+       font-size: 16px;
+    }
+    .accessories-cards__ellipse {
+        right: 0;
+    }
+    .accessories-cards__button {
+        padding: 10px 15px;
+    }
+    .button-more {
+        display: none;
+    }
+}

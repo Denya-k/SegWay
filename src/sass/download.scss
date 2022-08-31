@@ -1,4 +1,6 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
+
 
 .section-download {
     width: 100%;
@@ -15,6 +17,9 @@
     display: flex;
     justify-content: end;
     position: relative;
+    @include sm-d {
+        height: 450px;
+    }
     &-download__title {
         @include title;
         display: block;
@@ -22,27 +27,50 @@
         text-align: left;
         margin-top: 38px;
         margin-bottom: 17px;
+        @include sm-d {
+            font-size: 25px;
+            width: 100%;
+            margin-top: 250px;
+            text-align: center;
+        }
     }
     &-download__image{
         position: absolute;
         top: -85px;
         left: -210px;
+        @include sm-d {
+            width: 80%;
+            height: 80%;
+            top: -100px;
+            left: 0;
+        }
     }
     &-download__list {
         display: flex;
         justify-content: end;
         width: 60%;
-
+        @include sm-d {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
     &-download__item-img {
         height: 45px;
         margin-right: 5px;
+        @include sm-d {
+            display: block;
+            width: 100%;
+        }
     }
     &-download__item {
         display: flex;
         justify-content: space-between;
         text-align: start;
         font-size: 16px;
+        @include sm-d {
+            flex-wrap: wrap;
+            text-align: center;
+        }
     }
     &-button {
         padding: 10px 20px;
@@ -56,6 +84,11 @@
         &:hover {
             cursor: pointer;
             background-color: #0286d8;
+        }
+        @include sm-d {
+            width: 95%;
+            text-align: center;
+            margin: 30px 10px;
         }
     }
 

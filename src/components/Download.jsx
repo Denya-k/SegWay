@@ -55,7 +55,7 @@ export default function Download() {
                         type="submit"
                     >
                         DOWNLOAD MANUAL
-                    </button>
+                </button>
             </div>
             
         </div>

@@ -9,7 +9,7 @@ import Folding from "./components/Folding";
 import Footer from "./components/Footer";
 import Gradient from "./components/Gradient";
 import Header from "./components/Header";
-import KickScooter from "./components/KickSkooter";
+import KickScooter from "./components/KickScooter";
 import LedLight from "./components/LedLight";
 import Ninebot from "./components/Ninebot";
 import Owner from "./components/Owner";

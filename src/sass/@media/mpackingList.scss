@@ -1,0 +1,27 @@
+@import "breakpoints";
+
+@include sm-d {
+    .packing__list {
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .packing__list-title {
+        text-align: center;
+    }
+    .packing__img {
+        max-width: 250px;
+        max-height: 250px;
+        margin-top: 20px;
+        .ellipse__img {
+            max-width: 300px;
+        }
+    }
+    .iframe {
+        img {
+            width: 100%;
+            max-width: 340px;
+
+        }
+        
+    }
+}

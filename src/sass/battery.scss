@@ -1,4 +1,5 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
 
 .battery {
     width: 100%;
@@ -17,16 +18,30 @@
     &-battery__title {
         @include title;
         color: #FFFFFF;
+        @include sm-d {
+            font-size: 20px !important;
+            margin-top: 400px !important;
+        }
     }
     &-battery__text {
         color: #FFFFFF;
         font-weight: 400;
         font-size: 18px;
+        @include sm-d {
+            font-size: 18px !important;
+            width: 140% !important;
+        }
     } 
     img {
         position: absolute;
         right: 0;
         top: 0;
         z-index: -1;
+        @include sm-d {
+            position: static;
+        }
+    }
+    @include sm-d {
+        height: 900px !important;
     }
 }

@@ -1,3 +1,5 @@
+@import "./@media/breakpoints";
+
 .ractangle {
     display: flex;
     justify-content: center;
@@ -6,4 +8,7 @@
     height: 50px;
     background-color: #009EFF;
     color: #FFFFFF;
+    @include sm-d {
+        display: none;   
+    }
 }

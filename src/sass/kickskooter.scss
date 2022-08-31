@@ -1,4 +1,5 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
 
 
 
@@ -8,5 +9,18 @@
         @include title;
         margin-bottom: 40px;
         margin-top: 60px;
+        @include sm-d {
+            font-size: 28px;
+        }
+        span {
+            @include sm-d {
+                color: #009EFF;
+            }
+        }
+    }
+    img {
+        @include sm-d {
+            max-width: 400px;
+        }
     }
 }

@@ -1,0 +1,69 @@
+@import "breakpoints";
+
+
+@include sm-d {
+    .ninebot-title {
+        font-size: 37px;
+        text-align: center;
+        width: 110%;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+        order: 1;
+
+    }
+    .ninebot-content {
+        display: flex;
+        flex-direction: column;
+        .ninebot-img {
+            position: static;
+            order: 1;
+        }
+    }
+    .ninebot-card {
+        order: 2;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        .ninebot-card__title {
+            margin: 0 auto;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 50%;
+        }
+        .ninebot-button {
+            width: 30%;
+            padding: 8px 15px;
+        }
+        .ninebot-segway {
+            display: none;
+        }
+        img {
+            display: none;
+        }
+        .price {
+            text-align: center;
+            color: #323941;
+        }
+        .ninebot-buy {
+            // display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .ninebot-buy__btn {
+                padding: 13px 10px;
+                width: 45%;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+     
+    }
+    .ninebot-payment {
+        order: 2;
+        text-align: center;
+    }
+   
+}

@@ -13,7 +13,7 @@ import scooter11 from "../assets/img/scooters/scooter11.svg"
 import scooter12 from "../assets/img/scooters/scooter12.svg"
 import scooter13 from "../assets/img/scooters/scooter13.svg"
 import accessuare1 from"../assets/img/scooters/accessuare1.svg"
-import "../sass/skooters.scss"
+import "../sass/scooters.scss"
 
 export default function Scooters() {
     const skooters = [
@@ -33,13 +33,13 @@ export default function Scooters() {
         {name: "ACCSESSORIES", src: `${accessuare1}`}
     ]
   return (
-    <div className="skooters">
+    <div className="scooters">
         <div className="wrapper" >
-            <div className="skooters-skooter__list" >
+            <div className="scooters-scooter__list" >
                 {skooters.map((item,index) =>  
-                    <div className="skooters-skooter__item" key={index}>
+                    <div className="scooters-scooter__item" key={index}>
                         <div>
-                            <img src={item.src} alt="Skooter img" />
+                            <img src={item.src} alt="Scooter img" />
                             <span>{item.name}</span>
                         </div>
                     </div>

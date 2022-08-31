@@ -1,3 +1,5 @@
+@import "./@media/mheader.scss";
+
 body {
     margin: 0;
     padding: 0;
@@ -11,16 +13,27 @@ body {
 }
 
 .header {
-    width: 100%;
+    max-width: 100%;
     height: 48px;
     background-color: #323941;
+  
     .wrapper{
-        width: 1200px;
+        max-width: 1200px;
+        min-width: 375px;
         height: 48px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-      
+    }
+    .burger {
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        position: relative;
+        display: none;
+    }
+    .header-logo {
+        display: none;
     }
     
     &-list {
@@ -28,6 +41,7 @@ body {
         padding-left: 0;
         align-items: center;
     }
+
     &-list__item {
         list-style: none;
         color: #FFFFFF;
@@ -35,17 +49,47 @@ body {
         font-size: 18px;
         margin-right: 25px;
     }
+
     .contact {
+        .contact-icon {
+            color: #FFFFFF;
+            margin: 7px;
+            &:first-child {
+                display: none;
+            }
+        }
+       
+        #burg {
+            color: black;
+        }
         display: flex;
         align-items: center;
-        &-contact__icon {
-            width: 25px;
-            height: 25px;
-            margin-right: 25px;
-        }
         &-number {
             color: #FFFFFF;
             font-size: 18px;
         }
     }
+
+
+
+    // media 
+    // @include sm-d {
+    //     // .header {
+    //         background-color: #fff;
+    //         &-logo {
+    //             display: block;
+    //         }
+    //         &-burger {
+    //             display: block;
+    //         }
+    //         &-logo {
+    //             max-width: 90px;
+    //         }
+    //         &-list {
+    //             display: none;
+    //         }
+    //         margin-bottom: 100px;
+    //     // }
+    // }
+  
 }

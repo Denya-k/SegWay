@@ -1,0 +1,11 @@
+@import "breakpoints";
+
+@include sm-d {
+    .scooters {
+        max-height: 170px;
+        .scooters-scooter__list {
+            flex-wrap: nowrap;
+            overflow: hidden;
+        } 
+    }
+}

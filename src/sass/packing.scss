@@ -6,7 +6,8 @@
  .packing__list {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
     padding-top: 65px;
     &-title {
         margin-bottom: 30px;
@@ -28,3 +29,5 @@
     left: -15px;
     position: absolute;
 }
+
+@import "./@media/mpackingList.scss"

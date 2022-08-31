@@ -1,18 +1,35 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
+
 
 .reviews {
     padding-top: 65px;
     padding-bottom: 65px;
     background-color: #F5F5F5;
+    overflow-x: hidden;
+    @include sm-d {
+        padding: 40px 18px;
+    }
     &-title {
         @include title;
         text-align: center;
         margin-bottom: 40px;
+        @include sm-d {
+            font-size: 28px;
+        }
     }
     .reviews__list {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        width: 900px;
+        flex-wrap: wrap;
+        max-width: 900px;
+        @include sm-d {
+            flex-wrap: nowrap;
+        }
+        img {
+            max-width: 167px;
+            margin-right: 10px;
+        }
     }
 }

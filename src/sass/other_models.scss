@@ -1,4 +1,7 @@
+@import "./@media/mninebot.scss";
+
 .other {
+    overflow: hidden;
     &__title {
         text-align: center;
     }
@@ -11,6 +14,11 @@
         justify-content: space-between;
         text-align: center;
         flex-wrap: wrap;
+        @include sm-d {
+            margin-top: 20px;
+            flex-wrap: nowrap;
+            max-height: 300px;
+        }
         img {
             max-height: 133px;
         }
@@ -32,11 +40,17 @@
                 background-color: #009EFF;
                 color: #fff;
             }
+            @include sm-d {
+                padding: 10px 20px;
+            }
         }
     }
     &__item {
         width: 25%;
         position: relative;
+        @include sm-d {
+            margin-right: 40px;
+        }
     }
     &__form {
         box-sizing: border-box;
@@ -77,9 +91,9 @@
         position: absolute;
         left: 80px;
         z-index: -1;
-        // right: 110px;
-        // top: -10px;
-
+        @include sm-d {
+            left: 0;
+        }
     }
     margin-bottom: 60px;
 

@@ -1,13 +1,13 @@
-.skooters {
+.scooters {
     width: 100%;
     // height: 300px;
     background-color: #323941;
-    &-skooter__list {
+    &-scooter__list {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
     }
-    &-skooter__item {
+    &-scooter__item {
         width: 130px;
         height: 130px;
         padding: 20px;
@@ -31,3 +31,4 @@
         }
     }
 }
+@import "./@media/mscooters.scss"

@@ -1,15 +1,26 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
 
 .braking {
-    height: 550px;
+    min-height: 550px;
     display: flex;
     justify-content: end;
+    @include sm-d {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     &-system__content {
         width: 45%;
+        @include sm-d {
+            width: 80%;
+        }
     }
     &-system__title {
         @include title;
         margin-top: 150px;
+        @include sm-d {
+            margin-top: 20px;
+        }
     }
     &-system__text {
         @include text;
@@ -22,5 +33,9 @@
     img {
         position: absolute;
         left: 0;
+        @include sm-d {
+            position: static;
+
+        }
     }
 }

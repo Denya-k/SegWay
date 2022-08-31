@@ -1,3 +1,4 @@
+@import"./@media/breakpoints";
 @import "mixin.scss";
 
 .regenerative {
@@ -7,20 +8,40 @@
     height: 550px;
     display: flex;
     justify-content: end;
+    @include sm-d {
+        height: 400px;
+    }
     &-regenerative__title {
         @include title;
         margin-top: 60px;
         width: 65%;
         color: white;
+        @include sm-d {
+            font-size: 20px;
+            width: 70%;
+            z-index: 10;
+        }
     }
     &-regenerative__text {
         @include text;
         width: 55%;
         color: white;
+        @include sm-d {
+            font-size: 16px;
+            width: 90%;
+        }
     }
     img {
         position: absolute;
         z-index: -1;
+        @include sm-d {
+            // position: static;
+            // max-width: 485px;
+            // left: -50px;
+            margin-top: 50px;
+            overflow: visible;
+            width: 100%;
+        }
     } 
 
     
