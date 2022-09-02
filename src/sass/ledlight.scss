@@ -1,38 +1,124 @@
 @import "mixin.scss";
+@import "./@media/breakpoints";
 
-.battery {
+
+.light {
     width: 100%;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    height: 450px;
+    padding-top: 70px;
+    box-sizing: border-box;
     background-color: rgb(18, 18, 28);
-    // background-color: #0E0E16;;
     z-index: -1;
     position: relative;
+    display: flex;
+    // align-items: center;
+    z-index: -1;
+    flex-direction: column;
+    overflow: hidden;
+    @include sm-d {
+        height: 520px !important;
+        max-width: 390px;
+    }
     &-content {
         width: 55%;
         z-index: 100;
         margin: 0;
+        @include sm-d {
+            width: 90%;
+            margin: 0 auto;
+            max-height: 500px;
+            z-index: -1;
+        }
     }
-    &-battery__title {
+    &-light__title {
         @include title;
         color: #FFFFFF;
+        @include sm-d {
+            font-size: 20px !important;
+            margin-top: 180px !important;
+            width: 100%;
+        }
     }
-    &-battery__text {
+    &-light__text {
         color: #FFFFFF;
         font-weight: 400;
         font-size: 18px;
     } 
-    &-battery__desclimer {
+    &-light__desclimer {
         color: #6C6C6C;
     }
-    img {
-        // width: 100%;
-        // height: 850px;
+    .light__img {
         position: absolute;
         right: 0;
+        width: 600px;
         top: 0;
         z-index: -1;
+        @include sm-d {
+        // left: -90px;
+        width: 100%;
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .light {
+//     width: 100%;
+//     height: 550px;
+//     padding-top: 70px;
+//     box-sizing: border-box;
+//     background-color: rgb(18, 18, 28);
+//     z-index: -1;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: start;
+//     @include sm-d {
+//         height: 800px !important;
+//     }
+//     &-content {
+//         width: 55%;
+//         z-index: 100;
+//         margin: 0;
+//         @include sm-d {
+//             padding-left: 20px;
+//             padding: 0 20px;
+//             width: 70% !important;
+//         }
+//     }
+//     &-light__title {
+//         @include title;
+//         color: #FFFFFF;
+//         @include sm-d {
+//             font-size: 20px !important;
+//             margin-top: 400px !important;
+//             width: 100%;
+//         }
+//     }
+//     &-light__text {
+//         color: #FFFFFF;
+//         font-weight: 400;
+//         font-size: 18px;
+//         @include sm-d {
+//             font-size: 18px !important;
+//             width: 120% !important;
+//         }
+//     } 
+//     img {
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//         z-index: -1;
+//     }
+// }

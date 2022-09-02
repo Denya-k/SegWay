@@ -15,9 +15,9 @@ export default function Footer() {
                 </div>
                 <div className="footer-text">
                     <div className="footer-contacts">
-                        <span>+1(888) 777-77-77</span>
-                        <span>2637 Fairfax Ave Culver City, CA 90232</span>
-                        <span>Segway  California © 2017</span>
+                        <span className="number">+1(888) 777-77-77</span>
+                        <span className="desc">2637 Fairfax Ave Culver City, CA 90232</span>
+                        <span className="copy">Segway  California © 2017</span>
                     </div>
                 </div>
             </div>

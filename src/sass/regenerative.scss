@@ -9,7 +9,14 @@
     display: flex;
     justify-content: end;
     @include sm-d {
-        height: 400px;
+        height: 450px;
+        max-width: 390px;
+    }
+    &-content {
+        @include sm-d {
+            padding-top: 200px;
+            padding-left: 20px;
+        }
     }
     &-regenerative__title {
         @include title;
@@ -38,7 +45,7 @@
             // position: static;
             // max-width: 485px;
             // left: -50px;
-            margin-top: 50px;
+            margin-top: 0;
             overflow: visible;
             width: 100%;
         }

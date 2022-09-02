@@ -1,7 +1,11 @@
 @import "./@media/mheader.scss";
 
 .wrapper {
+    max-width: 1200px;
     margin: 0 auto;
+    @include sm-d {
+        max-width: 350px;
+    }
     &-owner {
         display: flex;
         justify-content: space-between;

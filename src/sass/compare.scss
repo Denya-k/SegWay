@@ -3,10 +3,17 @@
 
 
 .compare {
+    @include sm-d {
+        max-width: 390px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
     .title {
         @include title;
         @include sm-d {
-            font-size: 28px;
+            font-size: 25px;
         }
     }
     &__title {
@@ -25,10 +32,15 @@
         display: flex;
         justify-content: space-between;
         max-width: 1200px;
-        // margin: 0 auto;
         margin: 50px 20px;
         @include sm-d {
             margin: 30px 10px;
+        }
+    }
+    .img {
+        @include sm-d {
+            max-width: 120px;
+            max-height: 130px;
         }
     }
     &__img {
@@ -55,7 +67,6 @@
         @include sm-d {
             width: 20%;
             margin-right: 40px;
-            // justify-content: start;
         }
 
         li {
@@ -134,11 +145,17 @@
         margin: 0 auto;
         width: 1300px;
         overflow: hidden;
-        // height: 150px;
+        
         .window {
             width: 100%;
             height: 100%;
             overflow: hidden;
+            @include sm-d {
+                overflow: scroll;
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+            }
         }
         .all-pages-container{
             height: 100%;
@@ -155,8 +172,10 @@
         color: #009EFF;
         font-weight: 100;
         cursor: pointer;
-        // margin: 15px;
         margin: 20px;
+        @include sm-d {
+            display: none;
+        }
     }
     .disabled {
         color: #ccc;

@@ -18,9 +18,17 @@
             margin-top: 20px;
             flex-wrap: nowrap;
             max-height: 300px;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
         img {
             max-height: 133px;
+            @include sm-d {
+                height: 133px;
+                width: 133px;
+            }
         }
         .price {
             font-weight: 400;
@@ -41,7 +49,7 @@
                 color: #fff;
             }
             @include sm-d {
-                padding: 10px 20px;
+                padding: 10px 10px;
             }
         }
     }
@@ -61,6 +69,9 @@
         flex-direction: column;
         width: 23%;
         border: 3px solid #009EFF;
+        @include sm-d {
+            display: none;
+        }
         &__text {
             color: #323941;
             font-size: 16px;
@@ -96,5 +107,8 @@
         }
     }
     margin-bottom: 60px;
+    @include sm-d {
+        margin-bottom: 0;
+    }
 
 }

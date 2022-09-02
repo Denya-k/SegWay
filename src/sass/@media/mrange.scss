@@ -1,6 +1,9 @@
 @import "breakpoints";
 
 @include sm-d {
+    .wrapper {
+        max-width: 390px;
+    }
     .range-icons__list .range-icons__item {
         padding: 12px;
         justify-content: center;

@@ -1,4 +1,6 @@
 @import "mixin.scss";
+@import "./@media/mninebot.scss";
+
 
 .ninebot {
     position: relative;
@@ -61,16 +63,27 @@
     button:hover {
         cursor: pointer;
     }
-    &-img {
+    .max-img {
         position: absolute;
         bottom: -55px;
-        right: 0;
+        right: -320px;
+        width: 80%;
+    }
+    &-img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 45%;
+        @include sm-d {
+            left: 100px;
+        }
     }
     &-img__card {
         position: absolute;
-        right: 0;
+        right: -60px;
         bottom: 150px;
         z-index: -1;
+      
     }
     &-payment__title {
         margin-top: 30px;

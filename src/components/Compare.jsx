@@ -2,7 +2,6 @@ import React from 'react'
 import "../sass/compare.scss"
 import Carousel from './Carousel'
 import scootersArr from "./CompareArr.jsx"
-import CompareIcons from './CompareIcons'
 
 
 export default function Compare() {
@@ -12,7 +11,7 @@ export default function Compare() {
             <h1 className="title compare__title">compare specifications</h1>
             <span className="text compare__text">Add model to compare</span>
 
-                <div className="card__list compare__card__list">
+            <div className="card__list compare__card__list">
             <Carousel>
                     {scootersArr.map((item) => 
                         <div className="card compare__card" key={item.id}>
@@ -48,15 +47,8 @@ export default function Compare() {
                             </button>
                         </div>
                     )}
-
-                    {/* <div className="item item1">item1</div>
-                    <div className="item item2">item2</div>
-                    <div className="item item3">item3</div> */}
-
-                    {/* <CompareIcons /> */}
             </Carousel>
-                </div>
-                {/* <div className="next compare__next">&#707;</div> */}
+            </div>
         </div>
     </div>
   )

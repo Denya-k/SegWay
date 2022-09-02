@@ -1,6 +1,9 @@
 @import "breakpoints";
 
 @include sm-d {
+    .packing {
+        max-width: 390px;
+    }
     .packing__list {
         justify-content: center;
         padding-top: 40px;
@@ -17,10 +20,10 @@
         }
     }
     .iframe {
+        display: flex;
+        justify-content: center;
         img {
-            width: 100%;
-            max-width: 340px;
-
+            width: 90%;
         }
         
     }

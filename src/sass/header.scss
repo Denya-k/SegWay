@@ -1,8 +1,11 @@
 @import "./@media/mheader.scss";
+@import"./@media/breakpoints";
+
 
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     ul{
         padding: 0;
         margin: 0;
@@ -16,7 +19,9 @@ body {
     max-width: 100%;
     height: 48px;
     background-color: #323941;
-  
+    @include sm-d {
+        max-width: 390px;
+    }
     .wrapper{
         max-width: 1200px;
         min-width: 375px;
@@ -24,6 +29,9 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @include sm-d {
+            max-width: 100%;
+        }
     }
     .burger {
         width: 20px;

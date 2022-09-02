@@ -2,10 +2,18 @@
 
 
 @include sm-d {
+    .ninebot {
+        max-width: 390px;
+        .wrapper {
+            margin: 0 !important;
+            width: 390px !important;
+            background-color: #323941;
+        }
+    }
     .ninebot-title {
         font-size: 37px;
         text-align: center;
-        width: 110%;
+        width: 100%;
         margin: 0 auto;
         padding-left: 40px;
         padding-right: 40px;
@@ -16,14 +24,22 @@
     .ninebot-content {
         display: flex;
         flex-direction: column;
-        .ninebot-img {
+        margin: 0 auto;
+        align-items: center;
+        .ninebot-img,  .max-img{
             position: static;
             order: 1;
+        }
+        .max-img__card {
+            position: absolute;
+            width: 30%;
+            top: 200px;
+            left: 150px;
         }
     }
     .ninebot-card {
         order: 2;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;

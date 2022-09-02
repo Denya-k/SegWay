@@ -1,8 +1,8 @@
 import React, { useEffect, useState, Children, cloneElement } from 'react'
-import {FaChevronLeft,FaChevronRight, FaSnapchat } from 'react-icons/fa'
+import {FaChevronLeft,FaChevronRight } from 'react-icons/fa'
 import "../sass/compare.scss"
-const PAGE_WIDTH = 705
-// const PAGE_WIDTH = 75 
+
+const PAGE_WIDTH = 75
 
 export default function Carousel({children}) {
     const [pages, setPages] = useState([])
@@ -10,13 +10,12 @@ export default function Carousel({children}) {
     const [nextArrow, setNextArrow] = useState(true)
     const [prevArrow, setPrevArrow] = useState(false)
     
-
+    
     const handleLeftArrow = () => {
         setOffset(currentOffset => {
             const newOffset = currentOffset + PAGE_WIDTH
-            // newOffset > 0 ?  (setPrevArrow(false), setNextArrow(true)) :  setPrevArrow(true)
-            console.log(newOffset);
-            if (newOffset > -700) {
+
+            if (newOffset > -75) {
                 setPrevArrow(false);
                 setNextArrow(true)
             } else {
@@ -32,18 +31,17 @@ export default function Carousel({children}) {
         setOffset(currentOffset => {
 
             const newOffset = currentOffset - PAGE_WIDTH
-            const maxOffset = -(PAGE_WIDTH * (pages.length - 1))
-
-            if (newOffset < -1415) {
+            console.log(newOffset);
+            
+               if (newOffset < -150) {
                 setPrevArrow(true);
                 setNextArrow(false)
             } else {
                 setNextArrow(true)
                 setPrevArrow(true)
             }
-            // console.log(newOffset);
-            // console.log(maxOffset);
-            return (Math.max(newOffset, -2115))
+            return (Math.max(newOffset, -225))
+
         })
         
     }
@@ -68,7 +66,7 @@ export default function Carousel({children}) {
         />
         <div className="window">
             <div 
-                style={{transform: `translateX(${offset}px)`}}
+                style={{transform: `translateX(${offset}%)`}}
                 className="all-pages-container"
             >
                 {pages}

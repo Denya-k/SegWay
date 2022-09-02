@@ -12,7 +12,6 @@ export default function DualBrakingSystem() {
           src={brakingSystem}
           alt="Brakyng System" 
       />
-            
       
       <div className="braking-system__content">
           <h1 className="braking-system__title">

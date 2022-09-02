@@ -8,6 +8,14 @@
     background-color: #F5F5F5;
     overflow-x: hidden;
     @include sm-d {
+        max-width: 390px;
+        box-sizing: border-box;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+    @include sm-d {
         padding: 40px 18px;
     }
     &-title {
@@ -26,10 +34,11 @@
         max-width: 900px;
         @include sm-d {
             flex-wrap: nowrap;
+            img {
+                max-width: 167px;
+                margin-right: 10px;
+            }
         }
-        img {
-            max-width: 167px;
-            margin-right: 10px;
-        }
+        
     }
 }

@@ -20,13 +20,14 @@ import Regenerative from "./components/Regenerative";
 import Reviews from "./components/Reviews";
 import RidingModes from "./components/RidingModes";
 import Scooters from "./components/Scooters";
-import scooterImg from "./assets/img/ninebot.svg"
+import scooterImg from "./assets/img/ninebot_scooter2.svg"
 import scooterCard from "./assets/img/ninebot_card.svg"
 import scooterFirst from "./assets/img/scooter_ninebot.svg"
 import Range from "./components/Range";
 import Accessories from "./components/Accessories";
 import Compare from "./components/Compare";
 import OtherModels from "./components/OtherModels";
+import SegWayNinebot from "./components/SegWayNinebot";
 
 function App() {
   return (
@@ -35,9 +36,9 @@ function App() {
       <Owner />
       <Scooters />
       <Rectangle />
-      <Ninebot 
+      <SegWayNinebot 
         img1={scooterFirst} 
-        right={"158px"}
+        // right={"158px"}
       />
       <Range />
       <PackingList />

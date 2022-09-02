@@ -20,12 +20,12 @@ const payment = [
     {id:16, src: `${require(`../assets/img/payment/payment16.svg`).default}` }
 ]
 
-export default function Ninebot({img1, img2, right}) {
+export default function SegWayNinebot({img1}) {
   return (
-    <div className="ninebot max wrapper">
+    <div className="ninebot  wrapper">
         {/* <div className="wrapper"> */}
             <div className="ninebot-content">
-                <h1 className="ninebot-title max-title">
+                <h1 className="ninebot-title ">
                 SEGWAY NINEBOT KIKSCOOTER MAX
                 </h1>
                     <div className="ninebot-card">
@@ -78,23 +78,11 @@ export default function Ninebot({img1, img2, right}) {
                         </div>
                     </div>
                         
-                        
                         <img
-                            style={ right ? {right} : {}}
-                            className=" max-img" 
+                            className="ninebot-img" 
                             src={`${img1}`}
                             alt="Scooter" 
                         />
-                        {img2 ? 
-                        <img
-                            className="ninebot-img__card max-img__card" 
-                            src={`${img2}`}
-                            alt="Card" 
-                        />
-                        :
-                        ""
-                        }
-                        
                 </div>
             {/* </div> */}
     </div>

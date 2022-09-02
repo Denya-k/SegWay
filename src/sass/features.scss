@@ -6,6 +6,10 @@
     text-align: center;
     background-color: #F5F5F5;
     padding-top: 65px;
+    @include sm-d {
+        padding-top: 10px;
+        max-width:390px;
+    }
     &-features__title{
        @include title;
        margin-bottom: 65px;
@@ -22,10 +26,6 @@
     &-features__item {
         width: 25%;
         margin-bottom: 25px;
-        // @include sm-d {
-        //     width: 15%;
-        //     margin: 20px;
-        // }
         .title {
             font-weight: 300;
             font-size: 35px;
@@ -42,7 +42,13 @@
             }
         }
         &-img {
-            height: 100px;
+            max-height: 100px;
+            img {
+                @include sm-d {
+                    max-height: 70px;
+                }
+            }
+          
         }
         .p {
             color: #999999;

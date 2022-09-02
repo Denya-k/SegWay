@@ -3,9 +3,14 @@
 @include sm-d {
     .scooters {
         max-height: 170px;
+        max-width: 390px;
         .scooters-scooter__list {
             flex-wrap: nowrap;
-            overflow: hidden;
+            overflow-x: scroll;
+
         } 
+        .scooters-scooter__list::-webkit-scrollbar {
+            width: 0;
+          }
     }
 }

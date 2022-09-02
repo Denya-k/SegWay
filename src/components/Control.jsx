@@ -61,11 +61,13 @@ export default function Control() {
                     </div>
             </div>
             
-            <img 
-                className="iphone_img"
-                src={control1} 
-                alt="Iphone" 
-            />
+            <div className="iphone">
+                <img 
+                    className="iphone_img"
+                    src={control1} 
+                    alt="Iphone" 
+                />
+            </div>
         </div>
     </div>
   )

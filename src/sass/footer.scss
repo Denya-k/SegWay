@@ -1,8 +1,13 @@
+@import "./@media/breakpoints";
 footer {
     height: 90px;
     background-color: #32393F;
     box-sizing: border-box;
     padding: 20px 0;
+    @include sm-d {
+        max-width: 390px;
+        height: 200px;
+    }
 }
 
 .footer {
@@ -10,9 +15,34 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: white;
+    @include sm-d {
+        flex-direction: column;
+    }
     &-contacts {
         display: flex;
         justify-content: space-between;
+        @include sm-d {
+            flex-direction: column;
+            // align-items: center;
+            text-align: center;
+        }
+        .number {
+            @include sm-d {
+                order: 3;
+            }
+        }
+        .desc {
+            @include sm-d {
+                order: 2;
+                margin: 10px 0;
+            }
+        }
+        .copy {
+            @include sm-d {
+                order: 1;
+                margin-top: 20px;
+            }
+        }
     }
     &-text {
         width: 55%;
