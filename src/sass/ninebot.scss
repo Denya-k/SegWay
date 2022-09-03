@@ -6,6 +6,7 @@
     position: relative;
     &-content {
         width: 90%;
+        margin-bottom: 40px;
     }
     &-title {
         @include title;

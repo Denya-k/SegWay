@@ -41,6 +41,10 @@
             width: 70%;
         }
     }
+    .active_card {
+        background-color: #009EFF;
+        color: #fff;
+    }
 
     @import "./@media/mrange.scss"
     

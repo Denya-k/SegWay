@@ -38,7 +38,6 @@ function App() {
       <Rectangle />
       <SegWayNinebot 
         img1={scooterFirst} 
-        // right={"158px"}
       />
       <Range />
       <PackingList />
