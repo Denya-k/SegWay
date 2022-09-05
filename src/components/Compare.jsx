@@ -1,10 +1,12 @@
-import React from 'react'
-import "../sass/compare.scss"
-import Carousel from './Carousel'
-import scootersArr from "./CompareArr.jsx"
+import React from 'react';
+import "../sass/compare.scss";
+import Carousel from './Carousel';
+import scootersArr from "./CompareArr.jsx";
+import Buy from './Buy';
 
 
 export default function Compare() {
+
   return (
     <div className="compare">
         <div className="wrapper">
@@ -41,10 +43,9 @@ export default function Compare() {
                                 <li>{item.atmosphereLight}</li>
                             </ul>
 
-                            <span className="price compare__price">{item.price}</span>
-                            <button className="button comape__button">
-                                BUY IT NOW
-                            </button>
+                            <span className="price compare__price">${item.price}</span>
+
+                            <Buy text='BUY IT NOW'scooter={item}/>
                         </div>
                     )}
             </Carousel>

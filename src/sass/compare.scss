@@ -104,10 +104,16 @@
         }
         &:hover {
             cursor: pointer;
-            background-color: #009dffad;
+            background-color: #009dffe5;
 
         }
        
+    }
+    .added {
+        background-color: #ccc;
+        &:hover {
+            background-color: rgba(204, 204, 204, 0.81);
+        }
     }
 
     .next {

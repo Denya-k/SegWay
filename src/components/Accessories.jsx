@@ -1,6 +1,8 @@
 import React from 'react'
-import "../sass/accessories.scss"
 import  accessories from './AccessoriesArr'
+import Buy from './Buy'
+import "../sass/accessories.scss"
+import "../sass/compare.scss";
 
 
 
@@ -33,9 +35,13 @@ export default function Accessories() {
                     <span className="accessories-cards__price">
                         {item.price}
                     </span>
-                    <button className="accessories-cards__button"> 
-                        ADD TO CARD
-                    </button>
+                    {/* <button className="accessories-cards__button"> 
+                        ADD TO CART
+                    </button> */}
+                    <Buy
+                        text="ADD TO CART" 
+                        scooter={item} 
+                    />
                 </div>
             
             )}

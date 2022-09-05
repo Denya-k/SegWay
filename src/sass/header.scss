@@ -16,9 +16,12 @@ body {
 }
 
 .header {
-    max-width: 100%;
+    position: fixed;
+    width: 1520px;
     height: 48px;
     background-color: #323941;
+    z-index: 110;
+    transition: transform .2s linear;
     @include sm-d {
         max-width: 390px;
     }
@@ -62,6 +65,7 @@ body {
         .contact-icon {
             color: #FFFFFF;
             margin: 7px;
+            cursor: pointer;
             &:first-child {
                 display: none;
             }
@@ -77,27 +81,7 @@ body {
             font-size: 18px;
         }
     }
-
-
-
-    // media 
-    // @include sm-d {
-    //     // .header {
-    //         background-color: #fff;
-    //         &-logo {
-    //             display: block;
-    //         }
-    //         &-burger {
-    //             display: block;
-    //         }
-    //         &-logo {
-    //             max-width: 90px;
-    //         }
-    //         &-list {
-    //             display: none;
-    //         }
-    //         margin-bottom: 100px;
-    //     // }
-    // }
-  
+}
+.hide {
+    transform: translateY(-50px) !important;
 }

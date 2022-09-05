@@ -1,0 +1,26 @@
+@import "../../sass/@media/breakpoints";
+
+.image-slider {
+    &__current {
+        max-width: 540px;
+        max-height: 840px;
+        position: absolute;
+        bottom: 120px;
+        right: 0px;
+        width: 45%;
+        transition: all ease 2s;
+        @include sm-d {
+            left: 100px;
+        }
+        img {
+            transition: all ease 2s;
+            min-width: 540px;
+            max-width: 740px;
+            min-height: 940px;
+            max-height: 1140px;
+        }
+    }
+    .opasity {
+        opacity: 0;
+    }
+}

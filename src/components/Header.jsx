@@ -1,13 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../../src/sass/header.scss"
 import logo from "../assets/img/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faBars, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useSelector } from 'react-redux';
+import CartMenu from './CartMenu/CartMenu';
+import ItemsInCart from './ItemsInCart/ItemsInCart';
 
-export default function Header() {
+let lastScroll = 0;
+const scrollPosition = () => window.pageYOffset
+
+export default function Header({isCartMenuVisible, setIsCartMenuVisible}) {
+  // const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
+  const items = useSelector(state => state.cart.itemsInCart);
+  
+  const [headerVisible,setHeaderVisible] = useState(true);
+
+
+  window.addEventListener('scroll', () => {
+    if(scrollPosition() > lastScroll ) {
+      setHeaderVisible(false)
+      
+    }
+    else if(scrollPosition() < lastScroll  ) {
+      setHeaderVisible(true)
+    } 
+    lastScroll = scrollPosition();
+  })
+
   return (
-    <header className="header">
+    <header className={headerVisible ? "header" : "header hide"}>
       <div className="wrapper">
         <div className="burger header-burger">
             <FontAwesomeIcon 
@@ -35,10 +58,16 @@ export default function Header() {
                   className="contact-icon"
                   icon={faPhone} 
             />
-             <FontAwesomeIcon 
-              className="contact-icon"
-              icon={faCartShopping} 
+            
+            <FontAwesomeIcon
+              onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
+                className="contact-icon"
+                icon={faCartShopping} 
             />
+            { <ItemsInCart quantity={items.length}/> }
+            
+            {isCartMenuVisible && headerVisible && <CartMenu items={items} onClick={() => null}/>}
+
             <FontAwesomeIcon 
               className="contact-icon"
               icon={faInstagram} 

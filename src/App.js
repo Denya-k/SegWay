@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Battery from "./components/Battery";
 import Control from "./components/Control";
 import Download from "./components/Download";
@@ -28,42 +28,53 @@ import Accessories from "./components/Accessories";
 import Compare from "./components/Compare";
 import OtherModels from "./components/OtherModels";
 import SegWayNinebot from "./components/SegWayNinebot";
+import scootersArr from "./components/CompareArr";
+import { Provider } from "react-redux";
+import { store } from "./redux"; 
 
 function App() {
+  const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
+  const handlerClick = () => {
+    setIsCartMenuVisible(false)
+  }
   return (
-    <div className="App">
-      <Header />
-      <Owner />
-      <Scooters />
-      <Rectangle />
-      <SegWayNinebot 
-        img1={scooterFirst} 
-      />
-      <Range />
-      <PackingList />
-      <Accessories />
-      <Gradient />
-      <Features />
-      <KickScooter />
-      <Battery />
-      <DualBrakingSystem />
-      <LedLight />
-      <Folding />
-      <Regenerative />
-      <FastCharging />
-      <RidingModes />
-      <Download />
-      <Compare />
-      <Protective />
-      <Reviews />
-      <Control />
-      <Ninebot 
-        img1={scooterImg} 
-        img2={scooterCard}
-      />
-      <OtherModels />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className="App" >
+        <Header isCartMenuVisible={isCartMenuVisible} setIsCartMenuVisible={setIsCartMenuVisible}/>
+        <div className="main" onClick={handlerClick}>
+          <Owner />
+          <Scooters />
+          <Rectangle />
+          <SegWayNinebot 
+            img1={scooterFirst} 
+          />
+          <Range />
+          <PackingList />
+          <Accessories />
+          <Gradient />
+          <Features />
+          <KickScooter />
+          <Battery />
+          <DualBrakingSystem />
+          <LedLight />
+          <Folding />
+          <Regenerative />
+          <FastCharging />
+          <RidingModes />
+          <Download />
+          <Compare />
+          <Protective />
+          <Reviews />
+          <Control />
+          <Ninebot 
+            img1={scooterImg} 
+            img2={scooterCard}
+          />
+          <OtherModels />
+        </div>
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 

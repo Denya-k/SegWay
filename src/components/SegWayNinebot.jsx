@@ -1,5 +1,7 @@
 import React from 'react'
+import scootersArr from "./CompareArr"
 import "../sass/ninebot.scss"
+import ImageSlider from './ImageSlider/ImageSlider'
 
 const payment = [
     {id:1, src: `${require(`../assets/img/payment/payment1.svg`).default}` },
@@ -23,7 +25,6 @@ const payment = [
 export default function SegWayNinebot({img1}) {
   return (
     <div className="ninebot  wrapper">
-        {/* <div className="wrapper"> */}
             <div className="ninebot-content">
                 <h1 className="ninebot-title ">
                 SEGWAY NINEBOT KIKSCOOTER MAX
@@ -59,7 +60,7 @@ export default function SegWayNinebot({img1}) {
                         </div>
                         <div className="ninebot-buy">
                             <button className="ninebot-buy__btn">BUY IT NOW</button>
-                            <button className="ninebot-buy__btn">ADD TO CARD</button>
+                            <button className="ninebot-buy__btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div className="ninebot-payment">
@@ -78,13 +79,10 @@ export default function SegWayNinebot({img1}) {
                         </div>
                     </div>
                         
-                        <img
-                            className="ninebot-img" 
-                            src={`${img1}`}
-                            alt="Scooter" 
+                        <ImageSlider
+                            slider={scootersArr}
                         />
-                </div>
-            {/* </div> */}
+            </div>
     </div>
   )
 }
