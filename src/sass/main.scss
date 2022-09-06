@@ -1,0 +1,7 @@
+@import "./@media/breakpoints";
+
+.main {
+    @include sm-d {
+        z-index: -1;
+    }
+}

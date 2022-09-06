@@ -14,6 +14,7 @@
     }
     &-system__content {
         width: 45%;
+        z-index: -1;
         @include sm-d {
             width: 80%;
             padding-left: 20px !important;
@@ -45,6 +46,8 @@
     img {
         position: absolute;
         left: 0;
+        z-index: -1;
+
         @include sm-d {
             position: static;
             max-width: 100%;

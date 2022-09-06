@@ -9,11 +9,13 @@
     margin-bottom: 80px;
     padding-top: 90px;
     padding-bottom: 90px;
+
     @include sm-d {
         max-width: 390px;
         padding-left: 16px;
         padding-right: 16px;
         box-sizing: border-box;
+        z-index: -1;
     }
 }
 
@@ -25,6 +27,8 @@
     position: relative;
     @include sm-d {
         height: 470px;
+        z-index: 0;
+
     }
     &-download__title {
         @include title;
@@ -33,11 +37,14 @@
         text-align: left;
         margin-top: 38px;
         margin-bottom: 17px;
+
         @include sm-d {
             font-size: 25px;
             width: 100%;
             margin-top: 250px;
             text-align: center;
+        z-index: -1;
+
         }
     }
     &-download__image{

@@ -28,11 +28,23 @@ import Accessories from "./components/Accessories";
 import Compare from "./components/Compare";
 import OtherModels from "./components/OtherModels";
 import SegWayNinebot from "./components/SegWayNinebot";
-import scootersArr from "./components/CompareArr";
 import { Provider } from "react-redux";
 import { store } from "./redux"; 
+import PageMenu from "./components/PageMenu/PageMenu";
+import "./sass/main.scss"
+
+<ul className="header-list">
+<li className="header-list__item">REVIEWS</li>
+<li className="header-list__item">SHIPPING AND PAYMENT</li>
+<li className="header-list__item">WHOLESALE</li>
+<li className="header-list__item">BLOG</li>
+<li className="header-list__item">CONTACTS</li>   
+</ul>
+
+
 
 function App() {
+
   const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
   const handlerClick = () => {
     setIsCartMenuVisible(false)
@@ -40,7 +52,10 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App" >
-        <Header isCartMenuVisible={isCartMenuVisible} setIsCartMenuVisible={setIsCartMenuVisible}/>
+        <Header
+          isCartMenuVisible={isCartMenuVisible} 
+          setIsCartMenuVisible={setIsCartMenuVisible}
+        />
         <div className="main" onClick={handlerClick}>
           <Owner />
           <Scooters />

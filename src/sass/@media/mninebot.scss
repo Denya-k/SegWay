@@ -4,6 +4,7 @@
 @include sm-d {
     .ninebot {
         max-width: 390px;
+        z-index: -1;
         .wrapper {
             margin: 0 !important;
             width: 390px !important;

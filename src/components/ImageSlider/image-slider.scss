@@ -11,6 +11,7 @@
         transition: all ease 2s;
         @include sm-d {
             left: 100px;
+            position: static;
         }
         img {
             transition: all ease 2s;
@@ -18,6 +19,12 @@
             max-width: 740px;
             min-height: 940px;
             max-height: 1140px;
+            @include sm-d {
+                min-width: 250px;
+                max-width: 250px;
+                min-height: 250px;
+                max-height: 250px;
+            }
         }
     }
     .opasity {

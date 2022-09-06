@@ -1,3 +1,6 @@
+@import "../../sass/@media/breakpoints";
+
+
 .items-in-cart  {
     position: absolute;
     width: 15px;
@@ -12,4 +15,7 @@
     z-index: 110;
     // left: 15px;
     top: 10px;    
+    @include sm-d {
+        right: 45px;
+    }
 }

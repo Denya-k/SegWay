@@ -1,3 +1,5 @@
+@import "../../sass/@media/breakpoints";
+
 .cart-menu {
     position: absolute;
     top: 30px;
@@ -8,6 +10,11 @@
     z-index: 1000;
     border-radius: 15px;
     color: #fff;
+    @include sm-d {
+        width: 200px;
+        font-size: 12px;
+        right: 40px;
+    }
     &__arrange {
         margin-top: 20px;
         padding: 20px 0;

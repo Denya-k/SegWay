@@ -4,6 +4,7 @@
     .scooters {
         max-height: 170px;
         max-width: 390px;
+        padding-top: 45px;
         .scooters-scooter__list {
             flex-wrap: nowrap;
             overflow-x: scroll;

@@ -2,6 +2,9 @@
 
 
 @include sm-d {
+    .accessories {
+        z-index: -1;
+    }
     .accessories-title {
         font-size: 25px ;
     }
@@ -21,6 +24,8 @@
         width: 30%;
         max-width: 210px;
         margin-right: 20px;
+        z-index: -1;
+
     }
     .accessories-cards__title {
         font-size: 18px;
