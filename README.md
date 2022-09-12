@@ -1,3 +1,5 @@
+This is an online store where you can buy scooters to your taste. As well as accessories for it. You can add an item to your cart or remove it from your cart if you change your mind. The layout is cross-browser and adaptive for a computer and a mobile phone. The core technology was used by React and the Redux Toolkit.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

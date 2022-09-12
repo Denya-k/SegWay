@@ -21,7 +21,6 @@ let lastScroll = 0;
 const scrollPosition = () => window.pageYOffset
 
 export default function Header({isCartMenuVisible, setIsCartMenuVisible,}) {
-  // const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
   const items = useSelector(state => state.cart.itemsInCart);
   
   const [headerVisible,setHeaderVisible] = useState(true);
@@ -30,16 +29,7 @@ export default function Header({isCartMenuVisible, setIsCartMenuVisible,}) {
 
 
 
-  // window.addEventListener('scroll', () => {
-  //   if(scrollPosition() > lastScroll ) {
-  //     setHeaderVisible(false)
-      
-  //   }
-  //   else if(scrollPosition() < lastScroll  ) {
-  //     setHeaderVisible(true)
-  //   } 
-  //   lastScroll = scrollPosition();
-  // })
+  
 
   return (
     <header className={headerVisible ? "header" : "header hide"}>
@@ -88,17 +78,32 @@ export default function Header({isCartMenuVisible, setIsCartMenuVisible,}) {
             <span className="contact-number">+1 (888) 888-88-88</span>
         </div>  
       </div>
-      {/* {menuActive && <PageMenu 
-                      active={menuActive}
-                      setActive={setMenuActive}
-                      items={menu}  
-                      header={"Menu"}
-                    />} */}
-                    <PageMenu 
-                      active={menuActive}
-                      setActive={setMenuActive}
-                      items={menu}  
-                      header={"Menu"} />
+              <PageMenu 
+                active={menuActive}
+                setActive={setMenuActive}
+                items={menu}  
+                header={"Menu"} />
     </header>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+// window.addEventListener('scroll', () => {
+  //   if(scrollPosition() > lastScroll ) {
+  //     setHeaderVisible(false)
+      
+  //   }
+  //   else if(scrollPosition() < lastScroll  ) {
+  //     setHeaderVisible(true)
+  //   } 
+  //   lastScroll = scrollPosition();
+  // })
