@@ -20,16 +20,12 @@ const menu = [
 let lastScroll = 0;
 const scrollPosition = () => window.pageYOffset
 
-export default function Header({isCartMenuVisible, setIsCartMenuVisible,}) {
+export default function Header({isCartMenuVisible, setIsCartMenuVisible}) {
   const items = useSelector(state => state.cart.itemsInCart);
   
   const [headerVisible,setHeaderVisible] = useState(true);
   const [menuActive, setMenuActive] = useState(false)
 
-
-
-
-  
 
   return (
     <header className={headerVisible ? "header" : "header hide"}>

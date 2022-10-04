@@ -32,16 +32,20 @@ import { Provider } from "react-redux";
 import { store } from "./redux"; 
 import PageMenu from "./components/PageMenu/PageMenu";
 import "./sass/main.scss"
+import Current, { CurrentFunc } from "./components/Current";
 
 <ul className="header-list">
-<li className="header-list__item">REVIEWS</li>
-<li className="header-list__item">SHIPPING AND PAYMENT</li>
-<li className="header-list__item">WHOLESALE</li>
-<li className="header-list__item">BLOG</li>
-<li className="header-list__item">CONTACTS</li>   
+  <li className="header-list__item">REVIEWS</li>
+  <li className="header-list__item">SHIPPING AND PAYMENT</li>
+  <li className="header-list__item">WHOLESALE</li>
+  <li className="header-list__item">BLOG</li>
+  <li className="header-list__item">CONTACTS</li>   
 </ul>
 
-
+const arr = {
+  name: "Denis",
+  age: 23
+}
 
 function App() {
 
@@ -88,6 +92,8 @@ function App() {
           <OtherModels />
         </div>
         <Footer />
+        <Current   />
+        {/* <CurrentFunc   /> */}
       </div>
     </Provider>
   );
